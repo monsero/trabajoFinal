@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
       - name: angular-front
-        image: alexsuch/angular-cli
+        image: DOCKER_IMAGE:TAG
         ports:
         - containerPort: 3000
