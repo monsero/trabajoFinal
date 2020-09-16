@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  name: angularfinal
+  labels:
+    app: angularfinal
+spec:
+  selector: 
+    app: angularfinal
+  ports:
+   - protocol: TCP
+     port: 3000

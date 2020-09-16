@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  name: node-back
+  labels:
+    app: node-back
+spec:
+  selector: 
+    app: node-back
+  ports:
+    - protocol: TCP
+      port: 8000
