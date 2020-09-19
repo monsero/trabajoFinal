@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: angular-front
+spec:
+    selector:
+        matchLabels:
+            app: angular-front
+    template:
+        metadata:
+            labels:
+                app: angular-front
+        spec:
+            containers:
+                - name: angular-front
+                  image: sepulveda/angularfront:1.0
+                  imagePullPolicy: Always
+                  ports:
+                  - containerPort: 3000

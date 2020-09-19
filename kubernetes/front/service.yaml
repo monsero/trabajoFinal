@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: angular-front
+    labels:
+        app: angular-front
+spec:
+    selector:
+        app: angular-front
+    ports:
+        - protocol: TCP
+          port: 3000
