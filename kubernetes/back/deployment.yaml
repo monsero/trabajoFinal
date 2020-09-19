@@ -13,7 +13,7 @@ spec:
         spec:
             containers:
                 - name: node-back
-                  image: sepulveda/nodeback:1.0
+                  image: DOCKER_IMAGE:TAG
                   imagePullPolicy: Always
                   ports:
                   - containerPort: 8000
