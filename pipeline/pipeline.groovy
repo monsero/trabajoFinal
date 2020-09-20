@@ -5,7 +5,7 @@ pipeline {
         APP_REPO_URL = "${env.BASE_GIT_URL}/${nombre_repo}.git"
         TRAB_REPO_URL = "${env.BASE_GIT_URL}/trabajofinal.git"
         DOCKER_IMAGE = "sepulveda/${nombre_repo}"
-        DEPLOY_FOLDER = "deploy/kubernete/${nombre_repo}"
+        DEPLOY_FOLDER = "deploy/kubernetes/${nombre_repo}"
     }
 
     agent any
