@@ -57,7 +57,7 @@ pipeline {
                         clusterName: " cluster-monica",
                         zone: "us-central1-c",
                         manifestPattern: "${DEPLOY_FOLDER}/",
-                        credentialsId: "My First Project",
+                        credentialsId: "Proyecto",
                         verifyDeployments: true])
             }
         }
