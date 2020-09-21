@@ -1,21 +1,21 @@
-upstream front {
+upstream frontend {
   server 	angular-front:3000;
 }
-upstream back {
+upstream backend {
   server node-back:8000;
 }
 
 server {
   listen        80;
-  server_name   Proyecto;
+  server_name   seminario;
 
   
   location /api/ {
-    proxy_pass http://back/api/;
+    proxy_pass http://backend/api/;
   }
 
   location / {
-    proxy_pass http://front/;
+    proxy_pass http://frontend/;
 
     proxy_set_header HOST $host;
     proxy_set_header X-Forwarded-Proto $scheme;
