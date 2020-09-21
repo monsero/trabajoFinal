@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
     name: node-back
 spec:
+    replicas: REPLICA
     selector:
         matchLabels:
             app: node-back
