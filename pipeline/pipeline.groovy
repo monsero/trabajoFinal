@@ -54,7 +54,7 @@ pipeline {
                 
                 step([$class: 'KubernetesEngineBuilder', 
                         projectId: "wired-effort-288603",
-                        clusterName: " cluster-test",
+                        clusterName: " cluster-monica",
                         zone: "us-central1-c",
                         manifestPattern: "${DEPLOY_FOLDER}/",
                         credentialsId: "My First Project",

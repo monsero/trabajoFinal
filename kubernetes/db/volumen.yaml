@@ -11,7 +11,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   gcePersistentDisk:
-    pdName: disk-cluster
+    pdName: disk-monica
     fsType: ext4
 ---
 apiVersion: v1
