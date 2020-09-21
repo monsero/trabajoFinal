@@ -26,4 +26,4 @@ spec:
   resources:
     requests:
       storage: 100M
-  volumeName: mongo-pvc
+  volumeName: mongo-pv
