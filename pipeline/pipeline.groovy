@@ -57,7 +57,7 @@ pipeline {
                         clusterName: " cluster-test",
                         zone: "us-central1-c",
                         manifestPattern: "${DEPLOY_FOLDER}/",
-                        credentialsId: "myfirstproject",
+                        credentialsId: "My First Project",
                         verifyDeployments: true])
             }
         }
