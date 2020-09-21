@@ -11,11 +11,11 @@ server {
 
   
   location /api/ {
-    proxy_pass http://backend/api/;
+    proxy_pass http://back/api/;
   }
 
   location / {
-    proxy_pass http://frontend/;
+    proxy_pass http://front/;
 
     proxy_set_header HOST $host;
     proxy_set_header X-Forwarded-Proto $scheme;
