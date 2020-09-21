@@ -1,5 +1,5 @@
 upstream frontend {
-  server 	angular-front:3000;
+  server angular-front:3000;
 }
 upstream backend {
   server node-back:8000;
