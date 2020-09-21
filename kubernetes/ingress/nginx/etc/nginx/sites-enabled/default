@@ -1,7 +1,7 @@
-upstream frontend {
+upstream front {
   server 	angular-front:3000;
 }
-upstream backend {
+upstream back {
   server node-back:8000;
 }
 
